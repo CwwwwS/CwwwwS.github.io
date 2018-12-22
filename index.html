@@ -2,9 +2,9 @@
 <html>
 
   <head>
-    <title>点石H5-开源的H5工具</title>
-    <meta name="description" content="H5DS，开源的HTML5制作工具，官方网站h5ds.com">
-    <meta name="keywords" content="H5DS，开源的HTML5制作工具，官方网站h5ds.com">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no" />
     <meta name="format-detection" content="email=no" />
@@ -36,11 +36,11 @@
     <script>
       var H5DS_IMG_SOURCE = [];
       var H5DS_SLIDER_ANIMATE = {
-        "name": "上下隐藏",
-        "inNext": "pt-page-moveFromBottomFade",
-        "outNext": "pt-page-moveToTopFade",
-        "inPrev": "pt-page-moveFromTopFade",
-        "outPrev": "pt-page-moveToBottomFade"
+        "name": "上下3D盒子切换",
+        "inNext": "pt-page-rotateCubeTopIn3",
+        "outNext": "pt-page-rotateCubeTopOut3",
+        "inPrev": "pt-page-rotateCubeDownIn3",
+        "outPrev": "pt-page-rotateCubeDownOut3"
       };
       var H5DS_COLLECT_API = 'http://apis.h5ds.com/h5ds/collect';
     </script>
@@ -49,7 +49,7 @@
   </head>
 
   <body class="h5dsapp h5dsapp-phone">
-    <div class="h5ds-video-icon"><i></i><i></i><i></i><i></i></div><audio style="display:none" id="h5dsBgMusic" preload="auto" src="http://pic.ibaotu.com/00/23/30/17E888piCgGs.mp3" loop=""></audio>
+    <div class="h5ds-video-icon"><i></i><i></i><i></i><i></i></div><audio style="display:none" id="h5dsBgMusic" preload="auto" src="http://pic.ibaotu.com/00/23/42/89x888piCnfQ.mp3" loop=""></audio>
     <div class="h5ds-full" style="width:320px;height:514px">
       <div id="h5dsPopups"></div>
       <div>
@@ -72,9 +72,11 @@
         <div class="h5ds-swiper-page" data-title="%u7A7A%u767D%u9875%u9762" data-desc="" data-autoplay="false" data-lock="false">
           <div class="h5ds-swiper-pageinner">
             <div class="h5ds-swiper-layers" style="height:514px">
-              <div data-adsorbent="{}" id="" data-last-animate="" data-uefun="{}" class="layer layer-atext" style="z-index:9999;width:200px;height:200px;top:195px;left:75px;opacity:1">
+              <div data-adsorbent="{}" id="" data-last-animate="" data-uefun="{}" class="layer layer-atext" style="z-index:9999;width:170px;height:170px;top:105px;left:80px;opacity:1">
                 <div class="element" id="EID_30zah3a9xsc000" style="-webkit-animation:;animation:">
-                  <div class="layer-atext-inner" style="color:#9b9b9b"><span class="animated" style="animation:bounceIn 1s ease 0s 1 normal forwards running;opacity:0">最</span><span class="animated" style="animation:bounceIn 1s ease 0.1s 1 normal forwards running;opacity:0">最</span><span class="animated" style="animation:bounceIn 1s ease 0.2s 1 normal forwards running;opacity:0">最</span><span class="animated" style="animation:bounceIn 1s ease 0.30000000000000004s 1 normal forwards running;opacity:0">可</span><span class="animated" style="animation:bounceIn 1s ease 0.4s 1 normal forwards running;opacity:0">爱</span><span class="animated" style="animation:bounceIn 1s ease 0.5s 1 normal forwards running;opacity:0">的</span><span class="animated" style="animation:bounceIn 1s ease 0.6000000000000001s 1 normal forwards running;opacity:0">婧</span><span class="animated" style="animation:bounceIn 1s ease 0.7000000000000001s 1 normal forwards running;opacity:0">楚</span><span class="animated" style="animation:bounceIn 1s ease 0.8s 1 normal forwards running;opacity:0">，</span><span class="animated" style="animation:bounceIn 1s ease 0.9s 1 normal forwards running;opacity:0">平</span><span class="animated" style="animation:bounceIn 1s ease 1s 1 normal forwards running;opacity:0">安</span><span class="animated" style="animation:bounceIn 1s ease 1.1s 1 normal forwards running;opacity:0">夜</span><span class="animated" style="animation:bounceIn 1s ease 1.2000000000000002s 1 normal forwards running;opacity:0">快</span><span class="animated" style="animation:bounceIn 1s ease 1.3s 1 normal forwards running;opacity:0">乐</span><span class="animated" style="animation:bounceIn 1s ease 1.4000000000000001s 1 normal forwards running;opacity:0">呀</span><span class="animated" style="animation:bounceIn 1s ease 1.5s 1 normal forwards running;opacity:0">
+                  <div class="layer-atext-inner" style="color:#9b9b9b;text-align:center;font-size:21px"><span class="animated" style="animation:bounceIn 1s ease 0s 1 normal forwards running;opacity:0">最</span><span class="animated" style="animation:bounceIn 1s ease 0.1s 1 normal forwards running;opacity:0">最</span><span class="animated" style="animation:bounceIn 1s ease 0.2s 1 normal forwards running;opacity:0">最</span><span class="animated" style="animation:bounceIn 1s ease 0.30000000000000004s 1 normal forwards running;opacity:0">可</span><span class="animated" style="animation:bounceIn 1s ease 0.4s 1 normal forwards running;opacity:0">爱</span><span class="animated" style="animation:bounceIn 1s ease 0.5s 1 normal forwards running;opacity:0">的</span><span class="animated" style="animation:bounceIn 1s ease 0.6000000000000001s 1 normal forwards running;opacity:0">婧</span><span class="animated" style="animation:bounceIn 1s ease 0.7000000000000001s 1 normal forwards running;opacity:0">楚</span><span class="animated" style="animation:bounceIn 1s ease 0.8s 1 normal forwards running;opacity:0">
+</span><span class="animated" style="animation:bounceIn 1s ease 0.9s 1 normal forwards running;opacity:0">平</span><span class="animated" style="animation:bounceIn 1s ease 1s 1 normal forwards running;opacity:0">安</span><span class="animated" style="animation:bounceIn 1s ease 1.1s 1 normal forwards running;opacity:0">夜</span><span class="animated" style="animation:bounceIn 1s ease 1.2000000000000002s 1 normal forwards running;opacity:0">快</span><span class="animated" style="animation:bounceIn 1s ease 1.3s 1 normal forwards running;opacity:0">乐</span><span class="animated" style="animation:bounceIn 1s ease 1.4000000000000001s 1 normal forwards running;opacity:0">呀</span><span class="animated" style="animation:bounceIn 1s ease 1.5s 1 normal forwards running;opacity:0">!</span><span class="animated" style="animation:bounceIn 1s ease 1.6s 1 normal forwards running;opacity:0">!</span><span class="animated" style="animation:bounceIn 1s ease 1.7000000000000002s 1 normal forwards running;opacity:0">!</span><span class="animated" style="animation:bounceIn 1s ease 1.8s 1 normal forwards running;opacity:0">
+</span><span class="animated" style="animation:bounceIn 1s ease 1.9000000000000001s 1 normal forwards running;opacity:0">
 </span></div>
                 </div>
               </div>
@@ -199,8 +201,8 @@
     </div>
     <div class="h5ds-last-page" style="animation:slideInUp 0.5s ease 0s 1 normal forwards running;opacity:0">
       <div class="h5ds-last-info"><img src="http://cdn.h5ds.com/static/images/img-null.png" alt="" />
-        <h1>点石H5-开源的H5工具</h1>
-        <p>H5DS，开源的HTML5制作工具，官方网站h5ds.com</p>
+        <h1></h1>
+        <p></p>
         <div class="h5ds-last-btns"><button id="h5ds-last-close">关闭</button><button id="h5ds-last-topage1">重看</button></div>
       </div>
       <div class="h5ds-last-power">Powered by H5DS! X4.3</div>
